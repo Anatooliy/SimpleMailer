@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MailControl.ascx.cs" Inherits="SimpleMailer.Controls.MailControl" %>
 
+<asp:Label
+    Id="EmailLabel"
+    AssociatedControlID="Email"
+    meta:resourceKey="EmailLabel"
+    runat="server"></asp:Label>
+<br />
 <asp:TextBox 
     ID="Email"
     AutoPostBack="true"
@@ -10,10 +16,16 @@
 <br />
 <asp:Label 
     ID="ErrorLabel" 
-    CssClass="error-text" 
-    runat="server" 
+    CssClass="error-text"    
     Visible="false" 
-    Text="Not Valid"></asp:Label>
+    meta:resourceKey="ErrorLabel"
+    runat="server"></asp:Label>
+<br />
+<asp:Label
+    Id="MessageLabel"
+    AssociatedControlID="MailText"
+    meta:resourceKey="MessageLabel"
+    runat="server"></asp:Label>
 <br />
 <asp:TextBox 
     ID="MailText" 
@@ -24,4 +36,8 @@
     EnableViewState="false"
     runat="server"></asp:TextBox>
 <br />
-<asp:Button ID="SendButton" Text="Send" OnClick="SendButton_Click" runat="server" /> 
+<asp:Button 
+    ID="SendButton" 
+    meta:resourceKey="SendButton"
+    OnClick="SendButton_Click" 
+    runat="server" /> 
