@@ -7,18 +7,13 @@
     EnableViewState="false"
     runat="server"
     ></asp:TextBox>
-<asp:Label ID="ErrorLabel" CssClass="error-text" runat="server" Visible="false" Text="Not Valid"></asp:Label>
-<asp:RegularExpressionValidator    
-    ControlToValidate="Email"
-    EnableClientScript="false"
-    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
-    Display="None"
-    runat="server"></asp:RegularExpressionValidator>
-<asp:RequiredFieldValidator    
-    ControlToValidate="Email" 
-    EnableClientScript="False"
-    Display="None"
-    runat="server"></asp:RequiredFieldValidator>
+<br />
+<asp:Label 
+    ID="ErrorLabel" 
+    CssClass="error-text" 
+    runat="server" 
+    Visible="false" 
+    Text="Not Valid"></asp:Label>
 <br />
 <asp:TextBox 
     ID="MailText" 
