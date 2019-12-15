@@ -1,0 +1,39 @@
+﻿body {
+    margin: 0;    
+}
+
+.content {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 25px;
+    border-left: 2px solid #DCDCDC;
+    border-right: 2px solid #DCDCDC;
+}
+
+.text-area {
+    overflow: hidden;
+}
+
+.confirm-text {
+    text-align: center;
+    font-size: 22px;
+    color: green;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group .error-text {
+    position:absolute;
+    left: 0;
+    bottom: -14px;
+}

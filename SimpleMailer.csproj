@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Confirm.aspx" />
+    <Content Include="Content\Site.css" />
     <Content Include="Controls\MailControl.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
