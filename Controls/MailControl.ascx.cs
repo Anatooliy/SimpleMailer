@@ -1,26 +1,22 @@
 ﻿using SimpleMailer.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace SimpleMailer.Controls
 {
     public partial class MailControl : System.Web.UI.UserControl
     {
         public string ConfirmLink { get; set; } = "~/Confirm.aspx";
+        private const string mailStateKey = "mail_state";
         private MailModel MailState 
         {
             get 
             {                
-                return Session["mail_state"] as MailModel;
+                return Session[mailStateKey] as MailModel;
             }
             set 
             {
-                Session["mail_state"] = value;
+                Session[mailStateKey] = value;
             }
         }
         protected void Page_Load(object sender, EventArgs e)
